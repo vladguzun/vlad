@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Vlad</title>
+    <body>
+        <input type="text" id="text_box_id"/>
+        <button onclick="adauga()">Add</button>
+        <div id="div_id"></div>
+        <h1 id="h1"></h1>
+        <script>
+            function adauga(){
+                const element = document.getElementById('text_box_id');
+                const value = element.value;
+                const x = document.getElementById('h1');
+                x.innerText = value;
+                x.style.color = 'red';
+            }
+        </script>
+    </body>
+</head>
